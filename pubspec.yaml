@@ -1,0 +1,28 @@
+name: nephtrap_app
+description: NephTrap - Smart IoT Fly Trap Dashboard
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  firebase_core: ^3.9.0
+  firebase_database: ^11.3.2
+  google_fonts: ^6.2.1
+  fl_chart: ^0.71.0
+  pdf: ^3.11.0
+  printing: ^5.13.0
+  intl: ^0.20.0
+  path_provider: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
