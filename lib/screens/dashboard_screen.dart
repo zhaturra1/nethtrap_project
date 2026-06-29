@@ -66,7 +66,7 @@ class DashboardScreen extends StatelessWidget {
             ),
           // Live indicator dot
           Container(
-            margin: const EdgeInsets.only(right: 20),
+            margin: const EdgeInsets.only(right: 12),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -88,6 +88,21 @@ class DashboardScreen extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+          ),
+          
+          // Settings / Profile Icon
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: IconButton(
+              icon: Icon(
+                Icons.account_circle_rounded,
+                color: theme.colorScheme.primary,
+                size: 28,
+              ),
+              onPressed: () {
+                Navigator.pushNamed(context, '/settings');
+              },
             ),
           ),
         ],

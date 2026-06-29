@@ -5,6 +5,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'screens/app_shell.dart';
 import 'services/firebase_service.dart';
+import 'screens/landing_screen.dart';
+import 'screens/login_screen.dart';
+import 'screens/settings_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -67,7 +70,13 @@ class NephTrapApp extends StatelessWidget {
         ),
       ),
 
-      home: const AppShell(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const LandingScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/home': (context) => const AppShell(),
+        '/settings': (context) => const SettingsScreen(),
+      },
     );
   }
 }
